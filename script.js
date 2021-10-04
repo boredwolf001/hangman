@@ -2,13 +2,13 @@ const inputEl = document.getElementById('input');
 const imageEl = document.getElementById('image');
 
 const images = [
-  'hangman0.png',
-  'hangman1.png',
-  'hangman2.png',
-  'hangman3.png',
-  'hangman4.png',
-  'hangman5.png',
-  'hangman6.png'
+  'images/hangman0.png',
+  'images/hangman1.png',
+  'images/hangman2.png',
+  'images/hangman3.png',
+  'images/hangman4.png',
+  'images/hangman5.png',
+  'images/hangman6.png',
 ];
 const words = [
   'hangman',

@@ -1,6 +1,7 @@
 // DOM Elements
 const inputEl = document.getElementById('input');
 const imageEl = document.getElementById('image');
+const retriesCountEl = document.getElementById('retries-left-count');
 
 // Global variables
 const images = [
@@ -71,13 +72,13 @@ function handleKeyPress(e) {
     if (!userWord.includes('_')) {
       document.querySelector('.main').innerHTML = `
       <div>
-          <h2 style="text-align: center;">You Won</h2><br>
-          <h4 style="text-align: center;">The word is ${secretWord}</h4>
+          <h2 style="text-align: center;">You Won!</h1><br>
+          <h4 style="font-weight: 300;text-align: center;">The word is ${secretWord}</h4>
       </div>
       `;
     }
   } else {
-    // Increment image index
+    // Increasing image index
     currentImageIndex += 1;
     // Redraw image
     redrawImage();
@@ -86,7 +87,7 @@ function handleKeyPress(e) {
       document.querySelector('.main').innerHTML = `
       <div>
       <h2 style="text-align: center;">You Lose</h2><br>
-      <h4 style="text-align: center;">The word is ${secretWord}</h4></div>
+      <h4 style="font-weight: 300;text-align: center;">The word is ${secretWord}</h4></div>
       `;
     }
   }

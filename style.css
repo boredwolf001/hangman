@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 
 body {
   overflow: hidden;
-  background-color: coral;
+  background: coral;
+
   color: #fff;
   min-height: 100vh;
-  font-size: 20px;
 }
 
 h1 {
@@ -27,13 +27,30 @@ h1 {
   justify-content: center;
 }
 
-#image {
+.image {
   margin-right: 150px;
   width: 70%;
 }
 
-#input {
+.input {
   margin-top: 20px;
   font-size: 40px;
   letter-spacing: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  height: 50px;
+  text-align: center;
+}
+
+.footer .footer-text {
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
 }

@@ -1,24 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   overflow: hidden;
-  background: coral;
-
+  background: rgb(90, 125, 240);
   color: #fff;
   min-height: 100vh;
 }
 
 h1 {
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   text-align: center;
+}
+
+.h3 {
+  font-size: 25px;
+}
+
+.w-letters {
+  font-size: 20px;
 }
 
 .main {
@@ -38,19 +45,19 @@ h1 {
   letter-spacing: 10px;
 }
 
-.footer {
+.alert {
   position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  height: 50px;
-  text-align: center;
+  margin: 0 auto;
+  bottom: 20px;
+  left: 50%;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 10px 0;
+  transform: translateX(-50%) translateY(100px);
+  background-color: rgb(0, 38, 255);
+  transition: transform 0.3s ease-in-out;
 }
 
-.footer .footer-text {
-  color: #fff;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
+.alert.show {
+  transform: translateX(-50%) translateY(0);
 }

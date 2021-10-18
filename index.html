@@ -14,16 +14,15 @@
         <img src="" class="image" id="image" />
       </div>
       <div class="col">
-        <h3>Guess the word</h4>
-        <p>Press any key to start</p>
+        <p class="w-letters" style="margin: 20px 0">
+          Wrong Letters: <span id="w-letters"></span>
+        </p>
 
         <div class="input" id="input"></div>
       </div>
     </div>
 
-    <footer class="footer">
-      <small class="footer-text">Developed By Maneth@2021 | Hangman</small>
-    </footer>
+    <div class="alert" id="alert">You entered this letter already!</div>
 
     <script src="script.js"></script>
   </body>
